@@ -149,12 +149,12 @@ def acquire_images(cam, nodemap, nodemap_tldevice, row_low, row_high, col_low, c
                     #  When converting images, color processing algorithm is an
                     #  optional parameter.
                     image_converted = image_result.Convert(PySpin.PixelFormat_Mono16, PySpin.HQ_LINEAR)
-                    T = convert_to_temperature2(image_converted, row_low,row_high,col_low,col_high)
+                    T = convert_to_temperature(image_converted, row_low,row_high,col_low,col_high)
                     M = np.amax(T)
                     print(M)
                     
-                    if M>30:
-                        print(M)
+                    # if M>30:
+                    #     print(M)
                     
                     # # Create a unique filename
                     # if device_serial_number:
@@ -334,7 +334,7 @@ def convert_to_temperature2(image,row_low,row_high,col_low,col_high):
     J1 = 68.02445983886719
     J0 = 4458
     
-    Dist = 0.4
+    Dist = 0.8
     ExtOpticsTransmission = 1
     ExtOpticsTemp = TAtm
 

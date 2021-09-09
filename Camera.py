@@ -32,16 +32,20 @@
 # a number of cameras, NodeMapCallback serves as a good introduction to
 # programming with callbacks and events, and SaveToAvi exhibits video creation.
 
+###### USER PARAMETERS
+# Region of interest to display temperature
+row_low = 10
+row_high = 400
+col_low = 10
+col_high = 500
+
+
+
 import os
 import PySpin
 import sys
 from CameraFunctions import *
 
-
-row_low = 10
-row_high = 400
-col_low = 10
-col_high = 500
 
 
 def main():
