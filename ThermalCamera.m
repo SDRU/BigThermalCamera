@@ -1,4 +1,4 @@
-%%FLIR
+%%FLIR A655. Test how to convert image into temperature
 plate1 = importdata('C:\Users\OceanSpectro\Desktop\test.tiff');
 im = plate1;
 x=size(im,1);

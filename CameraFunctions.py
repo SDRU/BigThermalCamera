@@ -178,6 +178,7 @@ def acquire_images(cam, nodemap, nodemap_tldevice, row_low, row_high, col_low, c
                     #  images) need to be released in order to keep from filling the
                     #  buffer.
                     image_result.Release()
+
                     
 
             except PySpin.SpinnakerException as ex:

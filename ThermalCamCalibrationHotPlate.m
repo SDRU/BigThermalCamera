@@ -1,4 +1,4 @@
-%%FLIR
+%%FLIR A655. Calibration test with a hot plate. Camera looking at a hot plate vs set temperature of the plate
 
 close all
 clear all

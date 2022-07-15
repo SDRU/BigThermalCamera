@@ -32,6 +32,15 @@
 # a number of cameras, NodeMapCallback serves as a good introduction to
 # programming with callbacks and events, and SaveToAvi exhibits video creation.
 
+
+
+"""
+
+This code displays maximum temperature from a selected region in real time
+
+"""
+
+
 ###### USER PARAMETERS
 # Region of interest to display temperature
 row_low = 10
@@ -88,7 +97,7 @@ def main():
 
         print('Running example for camera %d...' % i)
 
-        result &= run_single_camera(cam,row_low, row_high, col_low, col_high)
+        result = run_single_camera(cam,row_low, row_high, col_low, col_high)
         print('Camera %d example complete... \n' % i)
 
     # Release reference to camera
